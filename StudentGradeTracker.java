@@ -6,7 +6,6 @@ public class StudentGradeTracker {
     static ArrayList<String> names = new ArrayList<>();
     static ArrayList<Integer> marks = new ArrayList<>();
 
-    // Add a student
     static void addStudent(Scanner sc) {
 
         System.out.print("Enter student name: ");
@@ -27,7 +26,6 @@ public class StudentGradeTracker {
         System.out.println("Student added successfully!");
     }
 
-    // Calculate grade
     static String calculateGrade(int mark) {
 
         if (mark >= 90) {
@@ -45,7 +43,6 @@ public class StudentGradeTracker {
         }
     }
 
-    // Display all students
     static void displayStudents() {
 
         if (names.size() == 0) {
@@ -69,7 +66,6 @@ public class StudentGradeTracker {
         }
     }
 
-    // Calculate average
     static void calculateAverage() {
 
         if (marks.size() == 0) {
@@ -88,7 +84,7 @@ public class StudentGradeTracker {
         System.out.println("Average marks: " + average);
     }
 
-    // Find highest score
+
     static void findHighest() {
 
         if (marks.size() == 0) {
@@ -111,7 +107,6 @@ public class StudentGradeTracker {
         System.out.println("Student: " + student);
     }
 
-    // Find lowest score
     static void findLowest() {
 
         if (marks.size() == 0) {
@@ -134,7 +129,6 @@ public class StudentGradeTracker {
         System.out.println("Student: " + student);
     }
 
-    // Search student
     static void searchStudent(Scanner sc) {
 
         System.out.print("Enter student name to search: ");
@@ -164,7 +158,6 @@ public class StudentGradeTracker {
         }
     }
 
-    // Update marks
     static void updateMarks(Scanner sc) {
 
         System.out.print("Enter student name: ");
@@ -192,8 +185,7 @@ public class StudentGradeTracker {
 
         System.out.println("Student not found.");
     }
-
-    // Delete student
+    
     static void deleteStudent(Scanner sc) {
 
         System.out.print("Enter student name to delete: ");
@@ -214,7 +206,7 @@ public class StudentGradeTracker {
         System.out.println("Student not found.");
     }
 
-    // Main method
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
